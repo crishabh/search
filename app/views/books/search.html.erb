@@ -1,0 +1,11 @@
+<% if @book.blank? %>
+    <h1>Sorry no book found...!!!</h1>
+<% elsif @book.count == 1 %>
+    <% @book.each do |b|%>
+       <h1>you searched for : <%= b.bookname %></h1>
+    <% end %>
+<% else %>
+    <% @book.each_with_index do |r, c|%>
+          <%= (c+1) %>.YOU Have Searched For>>>>>>>>>>>>>>>> <%= r.bookname%> <br />
+   <% end %>
+<% end %>

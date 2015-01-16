@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+<span style="text-align:right;">
+<% form_tag "/books/#{:search}" ,:method=>"post" do %>
+      <%= text_field_tag :search %>
+      <%= submit_tag "search" %>
+<% end %>
+</span>
+
+<%= yield %>
+
+</body>
+</html>
