@@ -81,11 +81,12 @@ class BooksController < ApplicationController
     end
   end
   def search
-    @book = Book.where("bookname LIKE ?", "#{params[:search].downcase}%")
+     @book = Book.where("bookname LIKE ?", "#{params[:search].downcase}%")
    #  respond_to do |format|
    #  format.html{
    #   render action: "index"
    # }
    #    end
+   #      @book= Book.search(params[:search])
   end
 end

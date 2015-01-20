@@ -1,8 +1,11 @@
 Search::Application.routes.draw do
   resources :books
 
-   get "/" ,:controller => "books" , :action=> "index"
- post "/books/:name", :controller=>"books", :action=>"search"
+  get "/" ,:controller => "books" , :action=> "index"
+  post "/books/:name", :controller=>"books", :action=>"search"
+  match "/books/search" => redirect("/books")
+  get "/books/search" => redirect("/books/")
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

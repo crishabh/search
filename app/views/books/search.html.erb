@@ -9,3 +9,8 @@
           <%= (c+1) %>.YOU Have Searched For>>>>>>>>>>>>>>>> <%= r.bookname%> <br />
    <% end %>
 <% end %>
+
+<% @book.each_with_index do |result,c |  %>
+      <%= (c+1) %><strong>.<%= result.bookname %>--------------<%=  result.author %></strong><br>
+
+<% end %>
