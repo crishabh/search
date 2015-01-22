@@ -87,6 +87,6 @@ class BooksController < ApplicationController
    #   render action: "index"
    # }
    #    end
-   #      @book= Book.search(params[:search])
+        @book= Book.search(params[:search])
   end
 end
