@@ -10,8 +10,7 @@
     <th>Bookname</th>
     <th>Rating</th>
     <th>Author</th>
-    <th></th>
-    <th></th>
+    <th>Author's Image</th>
     <th></th>
   </tr>
 
@@ -20,6 +19,7 @@
     <td><%= book.bookname %></td>
     <td><%= book.rating %></td>
     <td><%= book.author %></td>
+    <td><%= book.author_image_file_name %>
     <td><%= link_to 'Show', book %></td>
     <td><%= link_to 'Edit', edit_book_path(book) %></td>
     <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
