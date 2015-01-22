@@ -19,7 +19,7 @@ group :assets do
 end
 gem 'thinking-sphinx', '~> 3.1.0'
 gem 'jquery-rails'
-
+gem 'paperclip'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

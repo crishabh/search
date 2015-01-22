@@ -15,6 +15,10 @@
   <%= @book.author %>
 </p>
 
+<p>
+  <b>Avatar:</b>
+  <%= image_tag @book.author_image.url %>
+</p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
